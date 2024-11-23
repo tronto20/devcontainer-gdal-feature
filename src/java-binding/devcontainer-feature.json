@@ -1,7 +1,7 @@
 {
     "name": "Install GDAL With Java Binding.",
     "id": "java-binding",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Build GDAL with JAVA Binding.",
     "options": {
         "gdalVersion": {
