@@ -1,8 +1,8 @@
 {
     "name": "Install GDAL With Java Binding.",
     "id": "java-binding",
-    "version": "0.2.0",
-    "description": "Build GDAL with JAVA Binding.",
+    "version": "0.3.0",
+    "description": "Build GDAL with JAVA Binding. Required JDK already installed.",
     "options": {
         "gdalVersion": {
             "type": "string",
@@ -10,14 +10,9 @@
             "description": "GDAL Version."
         },
         "cpu": {
-            "type": "integer",
-            "default": 4,
+            "type": "string",
+            "default": "4",
             "description": "Set CPU Count for build GDAL."
-        },
-        "jdk": {
-            "type": "integer",
-            "default": 21,
-            "description": "JDK Version."
         }
     },
     "containerEnv": {
