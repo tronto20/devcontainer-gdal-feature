@@ -2,6 +2,13 @@
 
 set -e
 
+apt-get update
+
+echo "Install OpenJDK."
+
+JDK=${JDK:-21}
+apt-get install -y build-essential openjdk-${JDK}-jdk
+
 echo "Install GDAL."
 
 GDALVERSION=${GDALVERSION:-3.9.1}
@@ -9,8 +16,7 @@ CPU=${CPU:-4}
 echo "The provided gdal version is: $GDALVERSION."
 echo "Build Multi CPU: $CPU"
 
-apt-get update
-apt-get install -y build-essential wget cmake libtiff-dev libgeotiff-dev libproj-dev python3-dev python3-pip libxml2-dev libgeos-dev libjson-c-dev swig liblerc-dev ant proj-bin python3-numpy
+apt-get install -y wget cmake libtiff-dev libgeotiff-dev libproj-dev python3-dev python3-pip libxml2-dev libgeos-dev libjson-c-dev swig liblerc-dev ant proj-bin python3-numpy
 
 mkdir -p /tmp/gdal
 

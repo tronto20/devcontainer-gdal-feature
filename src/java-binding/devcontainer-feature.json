@@ -8,6 +8,16 @@
             "type": "string",
             "default": "3.9.1",
             "description": "GDAL Version."
+        },
+        "cpu": {
+            "type": "integer",
+            "default": 4,
+            "description": "Set CPU Count for build GDAL."
+        },
+        "jdk": {
+            "type": "integer",
+            "default": 21,
+            "description": "JDK Version."
         }
     },
     "containerEnv": {
