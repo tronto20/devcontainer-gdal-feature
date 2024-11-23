@@ -1,8 +1,10 @@
 {
-  "gdalinfo": {
+  "gdalVersion": {
     "image": "mcr.microsoft.com/devcontainers/java:1-21-bookworm",
     "features": {
-      "java-binding": {}
+      "java-binding": {
+        "gdalVersion": "3.10.0"
+      }
     }
   }
 }
