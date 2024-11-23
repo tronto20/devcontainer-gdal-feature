@@ -1,7 +1,7 @@
 
 # Install GDAL With Java Binding. (java-binding)
 
-Build GDAL with JAVA Binding.
+Build GDAL with JAVA Binding. Required JDK already installed.
 
 ## Example Usage
 
@@ -16,6 +16,7 @@ Build GDAL with JAVA Binding.
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | gdalVersion | GDAL Version. | string | 3.9.1 |
+| cpu | Set CPU Count for build GDAL. | string | 4 |
 
 
 
